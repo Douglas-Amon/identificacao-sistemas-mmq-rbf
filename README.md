@@ -29,9 +29,9 @@ O objetivo é modelar um sistema dinâmico a partir de dados experimentais utili
 Modelo linear baseado em regressão:
 
 $$
-[
+
 y[n] = a_1 y[n-1] + a_2 y[n-2] + b_1 u[n] + b_2 u[n-1]
-]
+
 $$
 
 * Ajuste via sistema normal
