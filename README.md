@@ -28,9 +28,11 @@ O objetivo é modelar um sistema dinâmico a partir de dados experimentais utili
 
 Modelo linear baseado em regressão:
 
+$$
 [
 y[n] = a_1 y[n-1] + a_2 y[n-2] + b_1 u[n] + b_2 u[n-1]
 ]
+$$
 
 * Ajuste via sistema normal
 * Avaliação por EMQ
@@ -42,9 +44,9 @@ y[n] = a_1 y[n-1] + a_2 y[n-2] + b_1 u[n] + b_2 u[n-1]
 
 Modelo não linear utilizando funções gaussianas:
 
-[
+$$
 \phi(x) = e^{-\frac{(x - c)^2}{2\sigma^2}}
-]
+$$
 
 * Definição de centros
 * Construção da matriz de ativação
@@ -83,7 +85,7 @@ E coloque ambos na mesma pasta do código (main.py).
 
 📌 Exemplo de estrutura correta:
 
-📁 modelagem-sistemas-mmq-rbf
+📁 identificacao-sistemas-mmq-rbf
  ├── dados_01.dat
  ├── dados_02.dat
  ├── main.py
