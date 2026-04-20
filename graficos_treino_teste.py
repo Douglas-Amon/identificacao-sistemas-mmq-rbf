@@ -26,3 +26,5 @@ plt.plot(tempo_teste, saida_teste, lw=2, alpha=0.5, label='dados de teste')
 plt.legend(loc='upper right', bbox_to_anchor=(0.98, 0.99))
 plt.grid(True)
 plt.show()
+
+![grafico](treino_teste.png)
