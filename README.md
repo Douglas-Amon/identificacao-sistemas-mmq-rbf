@@ -1,5 +1,3 @@
-# identificacao-sistemas-mmq-rbf
-
 # 📊 Modelagem de Sistemas com MMQ e RBF
 
 Projeto desenvolvido para a Unidade 2 da disciplina **ECT-33401 - Computação Numérica (UFRN)**.
@@ -13,12 +11,12 @@ O objetivo é modelar um sistema dinâmico a partir de dados experimentais utili
 
 ## 🚀 Funcionalidades
 
-✔ Leitura de dados experimentais
-✔ Modelagem com MMQ (linear)
-✔ Modelagem com RBF (não linear)
-✔ Avaliação com erro quadrático médio (EMQ)
-✔ Comparação entre modelo real e estimado
-✔ Validação com entrada degrau
+* ✔ Leitura de dados experimentais
+* ✔ Modelagem com MMQ (linear)
+* ✔ Modelagem com RBF (não linear)
+* ✔ Avaliação com erro quadrático médio (EMQ)
+* ✔ Comparação entre modelo real e estimado
+* ✔ Validação com entrada degrau
 
 ---
 
@@ -29,9 +27,7 @@ O objetivo é modelar um sistema dinâmico a partir de dados experimentais utili
 Modelo linear baseado em regressão:
 
 $$
-[
 y[n] = a_1 y[n-1] + a_2 y[n-2] + b_1 u[n] + b_2 u[n-1]
-]
 $$
 
 * Ajuste via sistema normal
@@ -56,11 +52,16 @@ $$
 
 ## 📂 Estrutura do Projeto
 
-```id="5k4l7g"
-📁 projeto
- ├── dados_01.dat   # dados de treino
- ├── dados_02.dat   # dados de teste
- ├── main.py        # código principal
+```
+📁 identificacao-sistemas-mmq-rbf
+ ├── dados_01.dat
+ ├── dados_02.dat
+ ├── graficos_treino_teste.py
+ ├── treinamento_mmq.py
+ ├── treinamento_rbf.py
+ ├── teste_mmq.py
+ ├── teste_rbf.py
+ ├── resposta_degrau.py
  └── README.md
 ```
 
@@ -68,28 +69,51 @@ $$
 
 ## ▶️ Como executar
 
-1. Clone o repositório:
+### ⚠️ Importante
 
-```id="b7c1z0"
-git clone https://github.com/seu-usuario/modelagem-sistemas-mmq-rbf.git
+O projeto está dividido em vários arquivos.
+Para executar corretamente, é necessário **unir todos os códigos em um único arquivo**, seguindo a ordem:
+
+1. `graficos_treino_teste.py`
+2. `treinamento_mmq.py`
+3. `treinamento_rbf.py`
+4. `teste_mmq.py`
+5. `teste_rbf.py`
+6. `resposta_degrau.py`
+
+📌 Após juntar, salve como:
+
+```bash
+main.py
 ```
 
-2. Baixe os arquivos de dados
+---
 
-Baixe os arquivos fornecidos pelo professor:
+### 1. Clone o repositório
 
+```bash
+git clone https://github.com/Douglas-Amon/identificacao-sistemas-mmq-rbf.git
+cd identificacao-sistemas-mmq-rbf
+```
+
+---
+
+### 2. Verifique os arquivos de dados
+
+Os arquivos devem estar na mesma pasta:
+
+```
 dados_01.dat
 dados_02.dat
+```
 
-E coloque ambos na mesma pasta do código (main.py).
+---
 
-📌 Exemplo de estrutura correta:
+### 3. Execute o código
 
-📁 identificacao-sistemas-mmq-rbf
- ├── dados_01.dat
- ├── dados_02.dat
- ├── main.py
- └── README.md
+```bash
+python main.py
+```
 
 ---
 
@@ -112,7 +136,7 @@ E coloque ambos na mesma pasta do código (main.py).
 
 ## 👨‍💻 Autor
 
-Douglas Amon-
+Douglas Amon
 Universidade Federal do Rio Grande do Norte (UFRN)
 
 ---
